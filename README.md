@@ -11,16 +11,16 @@ Using multithreading and SSE-Instructions was allowed.
 More information on the challenge can be found in the original task "challenge_task.txt".
 
 ## Files
-* AlignmentChallenge.h: header for the class definition
-* AlignmentChallenge.cpp: implementation of the Algorithm
-* bench_AC.cpp: main function, reading of the file and calling of the Algorithm
-* mason_illummina_hg38_chr10_1K_150bp.fasta: input file with 1K sequences, each 150bp long
-* Makefile: prepared makefile to build the binary bench_AC.
+* **AlignmentChallenge.h**: header for the class definition
+* **AlignmentChallenge.cpp**: implementation of the Algorithm
+* **bench_AC.cpp**: main function, reading of the file and calling of the Algorithm
+* **mason_illummina_hg38_chr10_1K_150bp.fasta**: input file with 1K sequences, each 150bp long
+* **Makefile**: prepared makefile to build the binary bench_AC.
 
 ## Call
-make bench_AC  
-./bench_AC mason_illumina_hg38_chr10_1K_150bp.fa 16 3 -1 -2  
-\# ./bench_AC \<input_file\> \<num_threads\> \<match_score\> \<mismatch_score\> \<gap_score\>
+    make bench_AC  
+    ./bench_AC mason_illumina_hg38_chr10_1K_150bp.fa 16 3 -1 -2  
+    \# ./bench_AC \<input_file\> \<num_threads\> \<match_score\> \<mismatch_score\> \<gap_score\>
 
 ## Result
 This has been the first time for me using SIMD-Instructions.
