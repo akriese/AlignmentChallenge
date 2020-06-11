@@ -20,7 +20,7 @@ More information on the challenge can be found in the original task "challenge_t
 ## Call
     make bench_AC  
     ./bench_AC mason_illumina_hg38_chr10_1K_150bp.fa 16 3 -1 -2  
-    \# ./bench_AC \<input_file\> \<num_threads\> \<match_score\> \<mismatch_score\> \<gap_score\>
+    # ./bench_AC <input_file> <num_threads> <match_score> <mismatch_score> <gap_score>
 
 ## Result
 This has been the first time for me using SIMD-Instructions.
