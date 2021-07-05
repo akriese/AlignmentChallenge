@@ -1,13 +1,13 @@
 # AlignmentChallenge
 
-This is a project from my third semester in my bachelor.
+This is a project from my third semester in my Bioinformatics bachelor.
 
 ## Brief
-The challenge is to compute the sum of all scores of all pairwise
+The challenge is to compute the sum of scores of all pairwise
 alignments of 1000 DNA sequences of length 150 each as fast as possible.
 
 The score shall be computed with the [Needleman-Wunsch-Algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm).  
-Using multithreading and SSE-Instructions was allowed.  
+Using multithreading and SSE-Instructions (up to sse4.2) was allowed.  
 More information on the challenge can be found in the original task "challenge_task.txt".
 
 ## Files
@@ -23,9 +23,9 @@ More information on the challenge can be found in the original task "challenge_t
     # ./bench_AC <input_file> <num_threads> <match_score> <mismatch_score> <gap_score>
 
 ## Result
-This has been the first time for me using SIMD-Instructions.
-It took lots of time understanding the idea and even more time to implement and tweak the solution.  
-Note, that the solution is optimized for this particular problem. Knowing the fixed length of the sequences, made things easier.
+This has been the first time for me using SIMD instructions.
+It took a lot of time understanding the idea and even more time to implement and tweak the solution.  
+Note that the solution is optimized for this particular problem. Knowing the fixed length of the sequences made things easier.
 
 In the end, my implementation was actually faster than the program from the [SeqAn](https://github.com/seqan/seqan3) library,
 that was "the end boss" of the challenge.  
